@@ -11,7 +11,12 @@
     <div id="pageContainer">
         <div id="formulaContainer">
             <h2>Formula</h2>
-            <input type="text" id="txtFormula" name="txtFormula">
+            <input type="text" id="txtFormula" name="txtFormula" readonly>
+        </div>
+
+        <div id="resultContainer">
+            <h2>Result</h2>
+            <input type="text" id="txtResult" name="txtResult" readonly>
         </div>
 
         <div id="calculatorContainer">
@@ -23,7 +28,7 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <input id="Answer" type="text">
+                            <input id="Answer" type="text" readonly>
                         </td>
                         <td>
                             <input type="button" value="=" onclick="EnterEqual()">
